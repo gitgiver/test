@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* body{
+				display: flex;
+				justify-content: center;
+				vertical-align: center;
+			} */
+			h2{
+				display: flex;
+				height:50px;
+				background-color: rgba(0,0,0,0.06);
+				
+				/* justify-content: center; */
+				align-items: center;
+				/* vertical-align: center; */
+			}
+			h2 span{
+				display: flex;
+				justify-content: center;
+				vertical-align: center;
+				width:30px;
+				height:30px;
+				border-radius: 100%;
+				background-color: aqua;
+				margin-right:10px;
+			}
+			.ullist{
+				/* margin:20px; */
+				background-color: rgb(255,200,95);
+				box-shadow:1px 5px 10px rgba(255,180,21,0.1),1px 6px 10px rgba(255,180,21,0.2);
+			}
+			ul{
+				list-style-type: none;
+				
+			}
+			ul li::before{
+				content: ">>";
+				position: relative;
+				left:-10px;
+				transition:all 0.3s linear;
+				color:green;
+			}
+			ul li:hover::before{
+				left:0;
+			}
+			ul li:hover{
+				background-color: rgba(0,0,0,0.1);
+			}
+			.visitnum{
+				float:right;
+			}
+			.headbox{
+				display: flex;
+				justify-content: center;
+				vertical-align: center;
+				align-items: center;
+				background-color: bisque;
+			}
+			.headbox img{
+				width:30%;
+				height:100%;
+			}
+			.headbox p{
+				display: inline-block;
+				width:70%;
+				height:100%;
+			}
+			
+			
+			
+			.footbox{
+						background-color: rgba(0,0,0,0.05);
+						/* width:1000px; */
+						display: flex;
+						justify-content: center;
+						vertical-align: center;
+						/* display: none; */
+					}
+			.footbox span+span{
+						border-left:1px solid blue;
+						padding:0 10px 0 10px;
+					}
+
+		</style>
+	</head>
+	<body>
+		<div class="ohead">
+			<div class="headbox">
+				<img src="dance.gif" />
+				<p><a href="#gofoot">!!!!gofoot!!!!</gofoot></a>al;jk]]]]]]]]]]]]]]]aaaa]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]</p>
+			</div>
+		</div>
+		<div class="obody">
+			<div class="ullist">
+			<h2><span>1</span><i>HTML简介</i></h2>
+			<ul>
+				<li>1.1前端技术简介<span class="visitnum">1000</span></li>
+				<li>1.2什么是HTML?<span class="visitnum">1000</span></li>
+				<li>1.3常见问题<span class="visitnum">1000</span></li>
+			</ul>
+			</div>
+			<div class="ullist">
+			<h2><span>1</span><i>HTML简介</i></h2>
+			<ul>
+				<li>1.1前端技术简介<span class="visitnum">1000</span></li>
+				<li>1.2什么是HTML?<span class="visitnum">1000</span></li>
+				<li>1.3常见问题<span class="visitnum">1000</span></li>
+			</ul>
+			</div>
+			<div class="ullist">
+			<h2><span>1</span><i>HTML简介</i></h2>
+			<ul>
+				<li>1.1前端技术简介<span class="visitnum">1000</span></li>
+				<li>1.2什么是HTML?<span class="visitnum">1000</span></li>
+				<li>1.3常见问题<span class="visitnum">1000</span></li>
+			</ul>
+			</div>
+			<div class="ullist">
+			<h2><span>1</span><i>HTML简介</i></h2>
+			<ul>
+				<li>1.1前端技术简介<span class="visitnum">1000</span></li>
+				<li>1.2什么是HTML?<span class="visitnum">1000</span></li>
+				<li>1.3常见问题<span class="visitnum">1000</span></li>
+			</ul>
+			</div>
+			<div class="ullist">
+			<h2><span>1</span><i>HTML简介</i></h2>
+			<ul>
+				<li>1.1前端技术简介<span class="visitnum">1000</span></li>
+				<li>1.2什么是HTML?<span class="visitnum">1000</span></li>
+				<li>1.3常见问题<span class="visitnum">1000</span></li>
+			</ul>
+			</div>
+			<div class="ullist">
+			<h2><span>1</span><i>HTML简介</i></h2>
+			<ul>
+				<li>1.1前端技术简介<span class="visitnum">1000</span></li>
+				<li>1.2什么是HTML?<span class="visitnum">1000</span></li>
+				<li>1.3常见问题<span class="visitnum">1000</span></li>
+			</ul>
+			</div>	
+		</div>
+		<div class="footbox" id="gofoot">
+						<span>关于绿叶</span>
+						<span>版权声明</span>
+						<span>联系我们</span>
+						<span>广告服务</span>
+						<span>意见反馈</span>
+					</div>
+	</body>
+</html>

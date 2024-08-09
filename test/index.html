@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>动态渐变虚线边框</title>
+<style>
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:100vh;
+	}
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+	@keyframes rotate{
+		100%{
+			transform:rotate(360deg);
+		}
+	}
+div{
+	position:relative;
+	
+	width:400px;
+	height:300px;
+	border-radius:10px;
+	overflow: hidden;
+	padding:15rem;
+	
+}
+div::before{
+	content: "";
+	position:absolute;
+	left:-50%;
+	top:-50%;
+	width:200%;
+	height:200%;
+	/* background-color:hotpink;
+	background-repeat: no-repeat;
+	background-size: 50% 50%,50% 50%;
+	background-position: 0,0,100% 0,100% 100%,0 100%; */
+	background-image:linear-gradient(green,green),linear-gradient(orange,orange),linear-gradient(blue,blue),linear-gradient(red,red);
+	/* background-color: #399953; */
+	background-repeat: no-repeat;
+	background-size: 50% 50%, 50% 50%;
+	background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+	/* background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5); */
+	
+	animation:rotate 4s linear infinite;#这个旋转代码只是给这个伪元素的哦.才能好像内部转边框不转.
+
+}
+
+</style>
+</head>
+<body>
+<div class="dashed-border"></div>
+</body>
+</html>

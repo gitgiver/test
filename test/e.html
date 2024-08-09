@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			@font-face {
+				font-family: myfont;
+				src: url("Whisper-Regular.ttf") format("truetype");
+			}
+			body{
+				font-family: myfont;
+				display: flex;
+				justify-content: center;
+			}
+			.container{
+				
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-column-gap: 30px;
+				grid-row-gap: 20px;
+				display:none;
+			}
+			.box{
+				width:300px;
+				height:200px;
+				/* border:1px solid blue; */
+			}
+			.box:hover{
+				transition: box-shadow 0.3s linear;
+				box-shadow:1px 2px 10px rgba(0,0,0,0.1),2px 2px 10px rgba(0,0,0,0.2) ;
+			}
+			img{
+				width:30%;
+				height:60%;
+				float:left;
+			}
+			.right{
+				float:left;
+				/* border:1px solid green; */
+				width:70%;
+			}
+			.title{
+				font-weight: bold;
+			}
+			.detail{
+				color:rgba(0,0,0,0.6);
+			}
+			.description{
+				color:rgba(0,0,0,0.9);
+			}
+			
+			.alist{
+				display: grid;
+				grid-template-columns:1fr 1fr 1fr;
+				border: 1px solid transparent;
+				}
+				
+			a{
+				display: inline-block;
+				width:70px;
+				
+				font-size: 14px;
+				/* padding-left:20px; */
+				margin:20px auto;
+			}
+			
+		.footbox{
+			background-color: rgba(0,0,0,0.05);
+			width:1000px;
+			text-align: center;
+			/* display: none; */
+		}
+		.footbox span+span{
+			border-left:1px solid blue;
+			padding:0 10px 0 10px;
+		}
+		.foot p:nth-child(2){
+			color:blue;
+		}
+		.pbox{
+			height:50px;
+			border:1px solid silver;
+			overflow: hidden;
+		}
+		.foot p{
+			transition:all 0.2s linear;
+			height:100%;
+			line-height: 20px;
+			font-size: 20px;
+		}
+		.foot:hover p{
+			
+			transform: translate(0,-70px);
+			cursor: pointer;
+		}
+		.gradient-background {
+		            width: 50px;
+		            height: 200px;
+		            background: linear-gradient(to bottom, rgba(0, 0, 0,0), rgb(0, 0, 0,1));
+		        }
+		</style>
+	</head>
+	<body>
+		<div class="foot">
+			<div class="pbox">
+				<p>七空幻音</p>
+				<p>七空幻音</p>
+			</div>
+			<div class="footbox">
+				<span>关于绿叶</span>
+				<span>版权声明</span>
+				<span>联系我们</span>
+				<span>广告服务</span>
+				<span>意见反馈</span>
+			</div>
+		</div>
+		 <div class="gradient-background"></div>
+		<div class="container">
+			<div class="box">
+				<img src="TP965_06.jpg"/>
+				<div class="right">
+				<p class="title">Python积雪急用（红宝书)</p>
+				<span class="detail">初级,24章，560页</span>
+				<hr/>
+				<span class="description">Python红宝书，真正六边形Python教程</span>
+				</div>
+				<div class="alist"><a href="http://ww.baidu.com">尝鲜试读</a><a href="http://ww.baidu.com">配套资源</a><a href="http://ww.baidu.com">立即购买</a></div>
+			</div>
+			<div class="box">
+				<img src="TP965_06.jpg"/>
+				<div class="right">
+				<p class="title">Python积雪急用（红宝书)</p>
+				<span class="detail">初级,24章，560页</span>
+				<hr/>
+				<span class="description">Python红宝书，真正六边形Python教程</span>
+				</div>
+				<div class="alist"><a href="http://http://ww.baidu.com">尝鲜试读</a><a href="http://ww.baidu.com">配套资源</a><a href="http://ww.baidu.com">立即购买</a></div>
+			</div>
+			<div class="box">
+				<img src="TP965_06.jpg"/>
+				<div class="right">
+				<p class="title">Python积雪急用（红宝书)</p>
+				<span class="detail">初级,24章，560页</span>
+				<hr/>
+				<span class="description">Python红宝书，真正六边形Python教程</span>
+				</div>
+				<div class="alist"><a href="http://ww.baidu.com">尝鲜试读</a><a href="http://ww.baidu.com">配套资源</a><a href="http://ww.baidu.com">立即购买</a></div>
+			</div>
+			<div class="box">
+				<img src="TP965_06.jpg"/>
+				<div class="right">
+				<p class="title">Python积雪急用（红宝书)</p>
+				<span class="detail">初级,24章，560页</span>
+				<hr/>
+				<span class="description">Python红宝书，真正六边形Python教程</span>
+				</div>
+				<div class="alist"><a href="http://ww.baidu.com">尝鲜试读</a><a href="http://ww.baidu.com">配套资源</a><a href="http://ww.baidu.com">立即购买</a></div>
+			</div>
+			<div class="box">
+				<img src="TP965_06.jpg"/>
+				<div class="right">
+				<p class="title">Python积雪急用（红宝书)</p>
+				<span class="detail">初级,24章，560页</span>
+				<hr/>
+				<span class="description">Python红宝书，真正六边形Python教程</span>
+				</div>
+				<div class="alist"><a href="http://ww.baidu.com">尝鲜试读</a><a href="http://ww.baidu.com">配套资源</a><a href="http://ww.baidu.com">立即购买</a></div>
+			</div>
+			<div class="box">
+				<img src="TP965_06.jpg"/>
+				<div class="right">
+				<p class="title">Python积雪急用（红宝书)</p>
+				<span class="detail">初级,24章，560页</span>
+				<hr/>
+				<span class="description">Python红宝书，真正六边形Python教程</span>
+				</div>
+				<div class="alist"><a href="http://ww.baidu.com">尝鲜试读</a><a href="http://ww.baidu.com">配套资源</a><a href="http://ww.baidu.com">立即购买</a></div>
+			</div>
+			
+		</div>
+	</body>
+</html>

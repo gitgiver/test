@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				display: flex;
+				            justify-content: center; /* 水平居中 */
+			}
+			.headbox{
+				width:100px;
+				height:60px;
+				box-sizing: border-box;
+				
+				display: flex;
+				            justify-content: center; /* 水平居中 */
+				            align-items: center; 
+				position: relative;
+				text-align: center;
+				float:left;
+			}
+			.headbox::after{
+				display: block;
+				content: "";
+				width:100%;
+				height:10%;
+				background-color: rgba(255,0,0,0.4);
+				transition:all 0.4s linear;
+				position: absolute;
+				bottom:0;
+				right:0;
+			}
+			.headbox:hover::after{
+				height:100%;
+			}
+			.headbox:first-child::after{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<div class="headbox">
+				<img src="dance.gif" style="width:200px;height:60px;margin-right:60px;">
+			</div>
+			<div class="headbox">
+				<p>首页</p>
+			</div>
+			<div class="headbox">
+				<p>前端入门</p>
+			</div>
+			<div class="headbox">
+				<p>前端进阶</p>
+			</div>
+			<div class="headbox">
+				<p>站长的书</p>
+			</div>
+			<div class="headbox">
+				<p>高校板块</p>
+			</div>
+			<div class="headbox">
+				<p>学习路线</p>
+			</div>
+			<div class="headbox">
+				<p>在线测试</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.container {
+			    display: grid;
+			    grid-template-columns: repeat(3, 1fr);
+			    grid-gap: 10px;
+				display: none;
+			}
+
+		.box1,.box2,.box3,.box4,.box5,.box6{
+	/* 		float:left; */
+			width:200px;
+			height:150px;
+			position:relative;
+			overflow:hidden;
+			margin:10px auto;
+			box-shadow: 5px 6px 10px rgba(0,0,0,0.1),5px 6px 10px rgba(0,0,0,0.15);
+		}
+		
+		img{
+			width:100%;
+			height:100%;
+		}
+	.container p{
+		position: absolute;
+		line-height: 100%;
+		bottom:-60px;
+		font-size: 16px;
+		width:100%;
+		height:40%;
+		background-color: rgba(255,110,20,0.6);
+		color:aqua;
+		transition:all 0.5s linear;
+	}
+	.container p:hover{
+		bottom:-20px;
+	}
+	
+	.smallbar{
+		height:40px;
+		width:220px;
+		background-color: aqua;
+	
+	}
+	/* .smallbar p::before{
+		content: "";
+		display: block;
+		border-width:20px;
+		border-style: solid;
+		border-color: transparent transparent transparent red;
+		position: absolute;
+		left:-20px;
+	} */
+	.smallbar p{
+		text-align: center;
+		line-height: 40px;
+		height:40px;
+		margin:0 auto;
+	}
+	#test {
+	  width: 0;
+	  height: 0;
+	  border-width: 20px;
+	  border-style: solid;
+	  border-color: transparent transparent transparent white;
+	  position: relative;
+	  top:40px;
+	}
+	#testa{
+		width: 0;
+		height: 0;
+		border-width: 20px;
+		border-style: solid;
+		 border-color:  transparent white transparent transparent;
+		 position: relative;
+		 top:-40px;
+		 left:180px;
+	}
+#id:hover .b{
+	background-color: rgba(14,200,49,0.3);
+}
+
+</style>
+	</head>
+	<body class="b">
+		<div id="test"></div>
+		<div class="smallbar">
+			<div>在线教程</div>
+		</div>
+		<div id="testa"></div>
+		<div class="container">
+			<div class="box1">
+				<img src="jiangshitupian-39635840_3.jpg" >
+				<p>这个游戏叫做植物大战僵尸<br/>很好玩的一个游戏</p>
+			</div>
+			<div class="box2">
+				<img src="jiangshitupian-39635840_3.jpg" >
+				<p>这个游戏叫做植物大战僵尸<br/>很好玩的一个游戏</p>
+			</div>
+			<div class="box3">
+				<img src="jiangshitupian-39635840_3.jpg" >
+				<p>这个游戏叫做植物大战僵尸<br/>很好玩的一个游戏</p>
+			</div>
+			<div class="box4">
+				<img src="jiangshitupian-39635840_3.jpg" >
+				<p>这个游戏叫做植物大战僵尸<br/>很好玩的一个游戏</p>
+			</div>
+			<div class="box5">
+				<img src="jiangshitupian-39635840_3.jpg" >
+				<p>这个游戏叫做植物大战僵尸<br/>很好玩的一个游戏</p>
+			</div>
+			<div class="box6">
+				<img src="jiangshitupian-39635840_3.jpg" >
+				<p>这个游戏叫做植物大战僵尸<br/>很好玩的一个游戏</p>
+			</div>
+			</div>
+	</body>
+</html>

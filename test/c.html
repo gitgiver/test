@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul{
+				list-style-type: none;
+				margin:0;
+				padding:0;
+				display: none;
+			}
+			ul li{
+				border:1px solid blue;			
+				position: relative;
+			}
+			.box{
+				border:1px solid silver;
+				margin-left:50px;
+				position: relative;
+			}
+			.box p{
+				padding-left:20px;
+			}
+			.box::before{
+					content: "<<";
+					color:red;
+					position: absolute;
+					top:0;
+					left:0;
+					
+			}
+			.box::after{
+				content:">>";
+				color:red;
+					position: absolute;
+					right:0;
+					bottom:0;
+					
+			}
+			img{
+				width:40px;
+				height:40px;
+				border-radius: 40px;
+				position: absolute;
+				top:10px;
+				transition:all 0.5s linear; 
+			}
+			img:hover{
+				transform: rotate(360deg);
+			}
+			#xuehuarongqi{
+				position: relative;
+			}
+		</style>
+		<script>
+			window.onload=function(){
+				orongqi=document.getElementById("xuehuarongqi");
+				var count=0;
+				
+				var timer=setInterval(function(){
+						
+						createxuehua(Math.random()*(window.innerWidth),0,Math.random()*2);
+
+				},1000);
+				function createxuehua(x,y,direction){
+					if (count>20) {clearInterval(timer); return;}
+					count++;
+					var oimg=document.createElement("img");
+					orongqi.appendChild(oimg);
+					oimg.src="xuehua.png";
+					
+					oimg.width="20px";
+					oimg.height="20px";
+					oimg.style.top=(-20)+"px";
+					oimg.style.left=(++x)+"px";
+					oimg.style.position="absolute";
+					if(direction>1){
+					setInterval(function(){
+						oimg.style.top=(++y)+"px";
+						oimg.style.left=(++x)+"px";
+					},20);
+					}
+					else{
+						setInterval(function(){
+							oimg.style.top=(++y)+"px";
+							oimg.style.left=(--x)+"px";
+						},5);
+					}
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="xuehuarongqi"></div>
+		<ul>
+			<li><img src="TP965_03.jpg"/><div class="box"><p>我很久没看到过这么好的教程了，网上很多教程都在讲芝麻，没有基础根本学不会。但是绿叶感觉很不一样，讲得非常通俗易懂。之前我跑了几趟图书馆也没有找到这么好的教程。</p></div></li>
+			<li><img src="TP965_06.jpg"/><div class="box"><p>看到现在的学习网站，这是我看过最高效，最精炼的HTML学习网站了。下一批肯定会造就很多前端人士。</p></div></li>
+			<li><img src="jiangshitupian-39635840_3.jpg"/><div class="box"><p>讲得非常详细，其他什么乱七八糟的网站讲得太简单了，前面还好理解后面的就看得懵了。这个作者不错支持一下！希望后面的知识也能讲得这么神奇！</p></div></li>
+			<li><img src="31001811365.jpg"/><div class="box"><p>站长深谙学习之道，就是把陌生概念和生活经验做对接，避免“知识的诅咒”，说白了就是要有很多恰切的比喻作为桥梁，thanks a lot！——认知心理学&编程爱好者</p></div></li>
+		</ul>
+	</body>
+</html>
